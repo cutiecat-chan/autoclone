@@ -1,0 +1,41 @@
+@import 'my-variables';
+
+header {
+  border-bottom: 1px solid #aaa;
+}
+
+.header-container {
+  @include flex-wrapper-baseline();
+  width: $container-width;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 0 10px;
+  text-align: left;
+  color: #333;
+
+  svg {
+    width: 3em;
+    height: 3em;
+    position: relative;
+    top: 0.5em;
+  }
+
+  h1 {
+    padding: 0.5rem;
+    margin: 0 1rem 0 0;
+  }
+
+  h5 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+h4 {
+  padding-top: 0;
+}
+
+.doc h4,
+.doc h3 {
+  padding-top: 2.4em;
+}

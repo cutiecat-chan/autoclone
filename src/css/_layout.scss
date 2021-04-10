@@ -1,0 +1,60 @@
+@import 'my-variables';
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html,
+body {
+  background-color: $body-background;
+  height: 100%;
+  margin: 0;
+  font-family: $font-family;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  width: $container-width;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+  margin-bottom: calc($footer-height / 2);
+}
+
+a {
+  color: $primary--darker;
+
+  &:hover {
+    color: $primary--darkest;
+  }
+
+  &:visited {
+    color: $primary--darker;
+  }
+
+  &:link {
+    color: $primary--darker;
+  }
+
+  &:focus {
+    color: $primary--darkest;
+  }
+}
+
+.account-switcher {
+  position: absolute;
+  right: 1em;
+  margin-top: 4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}

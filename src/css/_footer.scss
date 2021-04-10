@@ -1,0 +1,18 @@
+@import 'my-variables';
+
+footer {
+  @include flex-wrapper-top();
+  box-sizing: border-box;
+  padding: 1em 0;
+  background: $gray4;
+  width: 100%;
+}
+
+.footer-section {
+  width: calc(100% / $number-footer-sections);
+  padding-left: 1em;
+}
+
+.small-font {
+  font-size: 0.55em;
+}
