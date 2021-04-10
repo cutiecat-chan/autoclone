@@ -27,7 +27,7 @@ export function doGet(e) {
   // Build and return HTML in IFRAME sandbox mode.
   return template
     .evaluate()
-    .setTitle('Copy a Google Drive folder')
+    .setTitle('Backup Cutie')
     .setSandboxMode(HtmlService.SandboxMode.IFRAME);
 }
 
@@ -111,7 +111,7 @@ export function initialize(
         ]
       ]);
   } catch (e) {
-    console.error('unable to write "started copying"');
+    console.error('galat saat menulis "memulai backup"');
     console.error(e);
   }
 
